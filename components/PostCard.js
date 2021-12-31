@@ -32,7 +32,7 @@ const PostCard = ({ post }) => {
         <div classnName="font-medium text-gray-700">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 inline mr-2 text-pink-500"
+            className="h-6 w-6 inline mr-2 text-green-900"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -48,6 +48,16 @@ const PostCard = ({ post }) => {
             {moment(post.createdAt).format("MMM DD, YYYY")}
           </span>
         </div>
+      </div>
+      <p className="text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8">
+        {post.excerpt}
+      </p>
+      <div className="text-center">
+        <Link href={`/post/${post.slug}`}>
+          <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-green-900 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">
+            Les videre
+          </span>
+        </Link>
       </div>
     </div>
   );
