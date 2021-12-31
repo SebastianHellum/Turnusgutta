@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Postcard, Categories, PostWidget } from "../components";
+import { PostCard, Categories, PostWidget } from "../components";
 
 const posts = [
   {
