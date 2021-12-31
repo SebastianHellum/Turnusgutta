@@ -16,7 +16,7 @@ const PostCard = ({ post }) => {
       <h1 className="transition duartion-100 text-center mb-8 cursor-pointer hover:text-green-900 text-3xl font-semibold">
         <Link href={`/posts/${post.slug}`}>{post.title}</Link>
       </h1>
-      <div className="block lg:flex text-center items-center justift-center mb-8 w-full">
+      <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
         <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
           <img
             alt={post.author.name}
