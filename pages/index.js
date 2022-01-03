@@ -24,6 +24,7 @@ export default function Home({ posts }) {
 // Fetching data
 export async function getStaticProps() {
   const posts = (await getPosts()) || [];
+  posts.sort((a, b) => (a.position > b.position ? 1 : -1));
   return {
     props: { posts },
   };
