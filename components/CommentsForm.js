@@ -9,7 +9,18 @@ const CommentsForm = ({ slug }) => {
   const emailEl = useRef();
   const storeDataEl = useRef();
 
-  const handleCommentSubmission = () => {};
+  const handleCommentSubmission = () => {
+    setError(false);
+
+    const { value: comment } = commentEl.current.value;
+    const { value: name } = nameEl.current.value;
+    const { value: email } = emailEl.current.value;
+
+    if (!comment || !name || !email || !storeDataEl) {
+      setError(true);
+      return;
+    }
+  };
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
