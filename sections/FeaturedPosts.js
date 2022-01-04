@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+// import components
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
 import { FeaturedPostCard } from "../components";
 import { getFeaturedPosts } from "../services";
 
+//Fetch and set featured posts
+// Carousel which is responsive3
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 1024 },
@@ -36,7 +38,7 @@ const FeaturedPosts = () => {
   }, []);
 
   const customLeftArrow = (
-    <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-orange-700 rounded-full">
+    <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-orange-600 rounded-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6 text-white w-full"
@@ -55,7 +57,7 @@ const FeaturedPosts = () => {
   );
 
   const customRightArrow = (
-    <div className="absolute arrow-btn right-0 text-center py-3 cursor-pointer bg-orange-700 rounded-full">
+    <div className="absolute arrow-btn right-0 text-center py-3 cursor-pointer bg-orange-600 rounded-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6 text-white w-full"

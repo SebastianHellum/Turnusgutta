@@ -1,7 +1,9 @@
 import React from "react";
+//Import components
 import moment from "moment";
 import Link from "next/link";
 
+// Render the post card on front page
 const PostCard = ({ post }) => {
   console.log(post);
   return (
@@ -45,7 +47,7 @@ const PostCard = ({ post }) => {
             />
           </svg>
           <span className="align-middle">
-            {moment(post.createdAt).format("MMM DD, YYYY")}
+            {moment(post.createdAt).format("DD. MM. YYYY")}
           </span>
         </div>
       </div>

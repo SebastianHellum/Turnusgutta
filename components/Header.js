@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+//Import components
 import Link from "next/link";
 import { getCategories } from "../services";
 
+//Fetch and set categories
 const Header = () => {
   const [categories, setCategories] = useState([]);
 
@@ -22,7 +24,7 @@ const Header = () => {
         <div className="hidden md:float-left md:contents">
           {categories.map((category) => (
             <Link key={category.slug} href={`/category/${category.slug}`}>
-              <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+              <span className="md:float-right mt-2 align-middle text-white  hover:text-orange-700 ml-4 font-semibold cursor-pointer">
                 {category.name}
               </span>
             </Link>

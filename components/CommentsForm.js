@@ -1,7 +1,9 @@
 import React, { useRef, useState, useEffect } from "react";
-
+//Import Components
 import { submitComment } from "../services";
 
+//Fetch and set categories
+//Use localStorage to store the user info if the user allowed to do that
 const CommentsForm = ({ slug }) => {
   const [error, setError] = useState(false);
   const [localStorage, setLocalStorage] = useState(null);
@@ -49,12 +51,14 @@ const CommentsForm = ({ slug }) => {
 
   return (
     <div className="bg-white shadow-lg rounded-lg p-8 pb-12 mb-8">
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4">CommentsForm</h3>
+      <h3 className="text-xl mb-8 font-semibold border-b pb-4">
+        Legg til en kommentar
+      </h3>
       <div className="grid grid-cols-1 gap-4 mb-4">
         <textarea
           ref={commentEl}
           className="p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
-          placeholder="Write your comment here..."
+          placeholder="Skriv din kommentar her..."
           name="comment"
         />
       </div>
@@ -63,7 +67,7 @@ const CommentsForm = ({ slug }) => {
           type="text"
           ref={nameEl}
           className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
-          placeholder="Your name"
+          placeholder="Navnet ditt"
           name="name"
         />
       </div>
@@ -72,7 +76,7 @@ const CommentsForm = ({ slug }) => {
           type="text"
           ref={emailEl}
           className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
-          placeholder="Your email"
+          placeholder="Eposten din"
           name="email"
         />
       </div>
@@ -89,22 +93,24 @@ const CommentsForm = ({ slug }) => {
             className="text-gray-500 cursor-pointer ml-2"
             htmlFor="storeData"
           >
-            Save my e-mail and name for the next time I comment
+            Lagre min informasjon til neste gang
           </label>
         </div>
       </div>
-      {error && <p className="text-xs text-red-500">All fields are required</p>}
+      {error && (
+        <p className="text-xs text-red-500">Alle felter må fylles ut!</p>
+      )}
       <div className="mt-8">
         <button
           type="button"
           onClick={handleCommentSubmission}
-          className="transition duration-500 ease hover:bg-orange-700 inline-block bg-gray-400 text-lg rounded-full text-white px-8 py-3 cursor-pointer"
+          className="transition duration-500 ease hover:bg-orange-700 inline-block bg-black text-lg rounded-full text-white px-8 py-3 cursor-pointer"
         >
-          Post Comment
+          Legg til kommentar
         </button>
         {showSuccessMessage && (
-          <span classname="text-xl float-right font-semibold mt-3 text-green-500">
-            Comment sumbitted for review
+          <span classname="text-xl ml-4 float-right font-semibold mt-3 text-green-500">
+            Kommentaren er sendt til gjennomgang
           </span>
         )}
       </div>

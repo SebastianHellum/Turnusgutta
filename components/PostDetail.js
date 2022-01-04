@@ -1,6 +1,8 @@
 import React from "react";
+// import components
 import moment from "moment";
 
+//render post details on every single post page
 const PostDetail = ({ post }) => {
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;

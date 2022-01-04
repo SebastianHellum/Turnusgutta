@@ -1,8 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
-
 import { getPosts, getPostDetails } from "../../services";
-
+// Import components
 import {
   PostDetail,
   Categories,
@@ -13,6 +12,7 @@ import {
   Loader,
 } from "../../components";
 
+// Export postDetail pages
 const PostDetails = ({ post }) => {
   const router = useRouter();
 
@@ -58,6 +58,6 @@ export async function getStaticPaths() {
 
   return {
     paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
-    fallback: ture,
+    fallback: true,
   };
 }
