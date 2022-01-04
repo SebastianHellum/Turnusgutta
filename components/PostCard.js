@@ -29,7 +29,7 @@ const PostCard = ({ post }) => {
             {post.author.name}
           </p>
         </div>
-        <div classnName="font-medium text-gray-700">
+        <div className="font-medium text-gray-700">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 inline mr-2 text-orange-700"
