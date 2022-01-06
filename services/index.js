@@ -18,7 +18,6 @@ export const getPosts = async () => {
                 url
               }
             }
-            createdAt
             slug
             title
             excerpt
@@ -200,7 +199,6 @@ export const getFeaturedPosts = async () => {
         }
         title
         slug
-        createdAt
       }
     }   
   `;
