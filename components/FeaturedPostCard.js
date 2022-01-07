@@ -10,7 +10,7 @@ const FeaturedPostCard = ({ post }) => (
       className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-full h-72"
       style={{
         backgroundImage: `url('${post.featuredImage.url}')`,
-        filter: "grayscale(10%) brightness(0.4)",
+        filter: "grayscale(10%) brightness(0.3)",
       }}
     />
     <div className="absolute rounded-lg bg-center bg-gradient-to-b opacity-50 from-gray-400 via-gray-700 to-black w-full h-72" />
