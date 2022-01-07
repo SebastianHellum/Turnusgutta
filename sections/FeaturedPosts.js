@@ -6,7 +6,7 @@ import { FeaturedPostCard } from "../components";
 import { getFeaturedPosts } from "../services";
 
 //Fetch and set featured posts
-// Carousel which is responsive
+// Carousel which is responsive3
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 1024 },
@@ -39,7 +39,7 @@ const FeaturedPosts = () => {
 
   return (
     <div className="mb-8">
-      <Carousel infinite responsive={responsive} itemClass="px-8">
+      <Carousel infinite responsive={responsive} itemClass="px-4">
         {dataLoaded &&
           featuredPosts.map((post, index) => (
             <FeaturedPostCard key={index} post={post} />

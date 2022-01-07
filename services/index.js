@@ -102,6 +102,13 @@ export const getSimilarPosts = async (categories, slug) => {
         featuredImage {
           url
         }
+        author {
+          name
+          bio
+          photo {
+            url
+          }
+        }
         createdAt
         slug
       }
