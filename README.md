@@ -1,7 +1,6 @@
 # Blog app for Turnusgutta 🎣
 True fishermen of the north truly need their own blog, blogging is macho!\
-The app is designed for easy publishing trough GraphCMS`s system.\
-With React as cornerstone and Next.js, GraphQL/GraphCMS and Tailwind.css as compononents to make it awesome ⚛️
+The app is designed for easy publishing trough GraphCMS`s system. With React as cornerstone and Next.js, GraphQL/GraphCMS and Tailwind.css as compononents to make it awesome ⚛️
 
 #### Test in your browser👇
 <a href="https://turnusgutta.vercel.app/" target="_blank">turnusgutta.vercel.app</a>\
