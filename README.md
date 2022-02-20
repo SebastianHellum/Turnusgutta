@@ -1,27 +1,42 @@
-# Next.js + Tailwind CSS Example
+# Blog app for Turnusgutta 🎣
+True fishermen of the north truly need their own blog, blogging is macho!\
+The app is designed for easy publishing trough GraphCMS`s system. With React as cornerstone and Next.js, GraphQL/GraphCMS and Tailwind.css as compononents to make it awesome ⚛️
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+#### Test in your browser👇
+<a href="https://turnusgutta.vercel.app/" target="_blank">turnusgutta.vercel.app</a>\
+This version will be updated whenever the boys go fishing or out exploring 🌲
 
-## Preview
+#### Download 💻
+In the project directory, you can run:
+`npm start`
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+The page will reload when you make changes.\
+You may also see any lint errors in the console. 
 
-## Deploy your own
+#### Functionality 🤖
+* [X] Modern UI responsive for all platforms. 
+* [X] Comments under each post.
+* [X] With featured and recent posts. 
+* [X] Almost true fish stories. 
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+#### Database 💾
+GraphQL is used as querying language, and is retrieving data using GraphQL Queries trough the GraphCMS API and database. After creating the queries and API`s is it easy to use GraphCMS as administrator tool for the blog. Which also fishers who are not developers can use. 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+#### React & Next.js ⚛️
+React based Next.js i used as framework for the app. Next.js have done some improvements from plain React that i like. 
+* Automatic routing is something that is saves me some time with setting the project up. 
+* Next.js API route support with the ability to write direct queries to third party databases, like GraphCMS. 
+* The code splitting is of each JS component is making the app faster. 
 
-## How to use
+#### Tailwind 🎨
+Tailwind is used in this project as a CSS framework, I think it gives you more flexibility in creating own components than Material UI, Bootstrap and Bulma. 
+When building the project Tailwind automatically removes all unused CSS, for faster performance as well. 
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+![Mobile](img/mobile.png) 
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+
