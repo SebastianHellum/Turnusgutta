@@ -1,4 +1,6 @@
 # Blog app for Turnusgutta 🎣
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+	![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) \
 True fishermen of the north truly need their own blog, blogging is macho!\
 The app is designed for easy publishing trough GraphCMS`s system. With React as cornerstone and Next.js, GraphQL/GraphCMS and Tailwind.css as compononents to make it awesome ⚛️
 
